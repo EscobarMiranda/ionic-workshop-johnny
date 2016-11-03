@@ -1,0 +1,24 @@
+<ion-view>
+  <ion-nav-bar class="bar bar-header bar-positive">
+    <ion-nav-title>
+      <h1 class="title">Create reserve</h1>
+    </ion-nav-title>
+  </ion-nav-bar>
+  <ion-content>
+    <div class="list padding">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Name</span>
+        <input type="text" ng-model="vm.reserve.name" placeholder="Kevin Escobar">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Date</span>
+        <input type="text" ng-model="vm.reserve.date">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Reason</span>
+        <input type="text" ng-model="vm.reserve.reason" placeholder="Something here">
+      </label>
+      <button class="button button-block button-positive activated" ng-click="vm.createReserve()">Create reserve</button>
+    </div>
+  </ion-content>
+</ion-view>

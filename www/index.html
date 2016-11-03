@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <!-- compiled css output -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/ionic.app.css">
+    <link rel="stylesheet" href="css/ionic.app.min.css">
+    <!-- endinject -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!-- Cordova is bootstrapped by ionic-platform-web-client, uncomment this if you remove ionic-platform-web-client... -->
+    <!-- <script src="cordova.js"></script> -->
+    <script src="lib/angular-messages/angular-messages.min.js"></script>
+    <script src="lib/firebase/firebase.js"></script>
+    <script src="lib/angularfire/dist/angularfire.min.js"></script>
+    <!-- inject:js -->
+    <script src="app/app.module.js"></script>
+    <script src="app/core/core.module.js"></script>
+    <script src="app/resource/resource.module.js"></script>
+    <script src="app/main/main.module.js"></script>
+    <script src="app/service/service.module.js"></script>
+    <script src="app/create-reserve/create-reserve.module.js"></script>
+    <script src="app/app.config.js"></script>
+    <script src="app/app.routes.js"></script>
+    <script src="app/app.run.js"></script>
+    <script src="app/resource/resource.constant.js"></script>
+    <script src="app/main/main.controller.js"></script>
+    <script src="app/main/main.routes.js"></script>
+    <script src="app/create-reserve/create-reserve.controller.js"></script>
+    <script src="app/create-reserve/create-reserve.routes.js"></script>
+    <script src="app/service/reserve/reserve.service.js"></script>
+    <!-- endinject -->
+
+  </head>
+  <body ng-app="app">
+    <ion-nav-view>
+    </ion-nav-view>
+    <ion-tabs class="tabs-positive tabs-icon-top">
+      <ion-tab title="Reserves" icon-on="ion-ios-list" ui-sref="main" icon-off="ion-ios-list-outline">
+        <!-- Tab 1 content -->
+      </ion-tab>
+      <ion-tab title="Create reserve" icon-on="ion-ios-plus" ui-sref="createReserve" icon-off="ion-ios-plus-outline">
+        <!-- Tab 2 content -->
+      </ion-tab>
+      <ion-tab title="Settings" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline">
+        <!-- Tab 3 content -->
+      </ion-tab>
+    </ion-tabs>
+  </body>
+</html>

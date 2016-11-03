@@ -1,0 +1,17 @@
+<ion-view>
+  <ion-nav-bar class="bar bar-header bar-positive">
+    <ion-nav-title>
+      <h1 class="title">Reserves</h1>
+    </ion-nav-title>
+  </ion-nav-bar>
+  <ion-content>
+    <ion-list>
+      <ion-list-item ng-repeat="reserve in vm.reserveList()" class="item item-avatar">
+        <img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg">
+        <h2>{{reserve.name}}</h2>
+        <p>{{reserve.reason}}</p>
+        <p>{{reserve.date | date}}</p>
+      </ion-list-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
